@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceType name="MailServiceType" factoryClass="com.progress.codeshare.esbservice.mail.MailService"
+        xmlns="http://www.sonicsw.com/sonicxq">
+    <validParams>
+        <init>
+            <stringParam name="host" required="true"/>
+            <stringParam name="port" required="true"/>
+        </init>
+        <runtime>
+            <stringParam name="bcc"/>
+            <stringParam name="cc"/>
+            <stringParam name="from"/>
+            <stringParam name="replyTo"/>
+            <stringParam name="subject"/>
+            <stringParam name="to"/>
+        </runtime>
+    </validParams>
+</serviceType>
